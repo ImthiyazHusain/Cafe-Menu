@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icon_logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="PowerHouse — Taste the Fire, Feel the Power"
+    />
+    <title>PowerHouse</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ═══ HEADER / NAV ═══ -->
+    <header id="header">
+      <nav class="nav-container">
+        <div class="logo-container">
+          <img
+            src="images/logo/icon_logo.png"
+            alt="PowerHouse Logo"
+            width="40px"
+          />
+          <a href="#home" class="logo" aria-label="PowerHouse Home">
+            <span class="logo-main">PowerHouse</span>
+          </a>
+        </div>
+
+        <ul class="nav-links" id="navLinks" role="list">
+          <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+          <li><a href="#menu" class="nav-link" data-section="menu">Menu</a></li>
+          <li>
+            <a href="#about" class="nav-link" data-section="about">About</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ═══ HERO ═══ -->
+      <section id="home" class="hero">
+        <div class="hero-bg">
+          <img
+            src="images/logo/HomeBG.png"
+            alt="Home"
+            class="hero-img"
+            loading="eager"
+            decoding="async"
+          />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">Taste the Fire, Feel the Power</p>
+          <h1 class="hero-headline">
+            PowerHouse,<br />
+            <em>made with Love</em>
+          </h1>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </div>
+      </section>
+
+      <!-- ═══ MENU ═══ -->
+
+      <section id="menu" class="section menu-section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-label">Our Menu</p>
+          </div>
+
+          <!-- Menu Cards -->
+          <div class="menu-grid" id="menuGrid"></div>
+          <!-- /menu-grid -->
+        </div>
+      </section>
+
+      <!-- ═══ ABOUT ═══ -->
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <div class="about-img-col">
+            <div class="about-img-frame">
+              <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=70&auto=format"
+                alt="Restaurant interior"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="about-text-col">
+            <p class="section-label">Our Story</p>
+            <h2 class="section-title">
+              Born from a Passion<br /><em>for Real Food</em>
+            </h2>
+            <p class="about-body">
+              Power House was born with one mission — to serve food that hits
+              hard on taste and never compromises on quality. What started as a
+              simple idea has grown into a place where every bite delivers bold
+              flavors and unforgettable experience. <br /><br />
+              From juicy shawarmas to sizzling grilled chicken, everything we
+              serve is crafted to satisfy real cravings — fast, fresh, and full
+              of energy. <br /><br />
+              We don’t believe in shortcuts. No frozen shortcuts. No compromise.
+              Just real ingredients, powerful spices, and food made with
+              passion.
+            </p>
+            <ul class="about-pillars" role="list">
+              <li>
+                <span class="pillar-icon">&#9650;</span>
+                <div>
+                  <strong>Sourced Fresh</strong>
+                  <p>Local farms, daily delivery, zero compromise.</p>
+                </div>
+              </li>
+              <li>
+                <span class="pillar-icon">&#9670;</span>
+                <div>
+                  <strong>Cooked to Order</strong>
+                  <p>Every dish starts the moment you ask.</p>
+                </div>
+              </li>
+              <li>
+                <span class="pillar-icon">&#9679;</span>
+                <div>
+                  <strong>Boldly Flavoured</strong>
+                  <p>Spices blended in-house. Always distinct.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ CONTACT ═══ -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-label">Find Us</p>
+            <h2 class="section-title">Come Sit with Us</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Location</strong>
+                  <p>
+                    Santha Thirumana Mandapam, 13, Rice Mill Rd, Kuniyamuthur,
+                    Coimbatore, Tamil Nadu 641008
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Phone</strong>
+                  <p><a href="tel:+919025553053">+91 90255 53053</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Hours</strong>
+                  <p>Mon – Sunday : 03:00 PM – 11:00 PM PM</p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/9025553053?text=Hi%2C%20I%27d%20like%20to%20place%20an%20order!"
+                target="_blank"
+                rel="noopener"
+                class="whatsapp-btn"
+              >
+                <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M16.002 2.667C8.638 2.667 2.667 8.636 2.667 16a13.28 13.28 0 001.847 6.773L2.667 29.333l6.773-1.772A13.294 13.294 0 0016.002 29.333c7.364 0 13.331-5.97 13.331-13.333S23.366 2.667 16.002 2.667zm0 24a10.604 10.604 0 01-5.44-1.493l-.388-.232-4.026 1.053 1.073-3.92-.253-.403A10.593 10.593 0 015.334 16c0-5.882 4.786-10.667 10.668-10.667 5.882 0 10.666 4.785 10.666 10.667S21.884 26.667 16.002 26.667zm5.847-7.99c-.32-.16-1.893-.934-2.186-1.04-.294-.107-.508-.16-.72.16-.214.32-.828 1.04-.986 1.253-.16.213-.32.24-.64.08-.32-.16-1.35-.497-2.573-1.587-.95-.848-1.59-1.895-1.777-2.215-.186-.32-.02-.493.14-.652.144-.143.32-.373.48-.56.16-.186.213-.32.32-.533.107-.213.053-.4-.027-.56-.08-.16-.72-1.733-.987-2.373-.26-.624-.524-.538-.72-.548l-.613-.01c-.213 0-.56.08-.853.4-.294.32-1.12 1.094-1.12 2.667 0 1.573 1.147 3.093 1.307 3.307.16.213 2.253 3.44 5.467 4.826.763.33 1.36.527 1.823.675.766.244 1.464.21 2.016.127.615-.092 1.893-.774 2.16-1.521.267-.747.267-1.387.187-1.52-.08-.134-.294-.214-.614-.374z"
+                  />
+                </svg>
+                Chat on WhatsApp
+              </a>
+            </div>
+
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d377.5536712353342!2d76.95367935627722!3d10.962420260882256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85b4037beaa45%3A0xdac8bcc05c5bd93!2sLAKES%20BAKERY!5e0!3m2!1sen!2sin!4v1775663013550!5m2!1sen!2sin"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="PowerHouse Location"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a href="#home" class="footer-logo">PowerHouse</a>
+        <p class="footer-tagline">Taste the Fire, Feel the Power</p>
+
+        <div class="social-links" role="list" aria-label="Social media">
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com/the_powerhouse._"
+            class="social-link"
+            aria-label="Instagram"
+            role="listitem"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a
+            href="#"
+            class="social-link"
+            aria-label="Facebook"
+            role="listitem"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              />
+            </svg>
+          </a>
+          <!-- Twitter/X -->
+          <a
+            href="#"
+            class="social-link"
+            aria-label="Twitter / X"
+            role="listitem"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              />
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a
+            href="#"
+            class="social-link"
+            aria-label="YouTube"
+            role="listitem"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"
+              />
+              <polygon
+                points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
