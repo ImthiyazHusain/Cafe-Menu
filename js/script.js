@@ -15,11 +15,11 @@ const juicesContainer = document.getElementById("juicesMenuGrid");
 const dessertsContainer = document.getElementById("dessertsMenuGrid");
 
 function normalizeAssetPath(path) {
-  const isHtmlPage = window.location.pathname.includes('/Html/');
-  if (path.startsWith('../images/')) {
-    return isHtmlPage ? path : path.replace('../images/', 'images/');
+  const isHtmlPage = window.location.pathname.includes("/Html/");
+  if (path.startsWith("../images/")) {
+    return isHtmlPage ? path : path.replace("../images/", "images/");
   }
-  if (path.startsWith('images/')) {
+  if (path.startsWith("images/")) {
     return isHtmlPage ? `../${path}` : path;
   }
   return path;
@@ -67,10 +67,16 @@ if (shawarmaContainer) {
                   <div class="card-top">
                     <h3 class="card-name">${item.name}
                     </h3>
-                    <span class="card-price"> Roll: ${item.price.roll} &nbsp;Plate: ${item.price.palte}</span>
-                  </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+
+<span class="card-price">
+  ${
+    typeof item.price === "object"
+      ? `Roll: ${item.price.roll} &nbsp; Plate: ${item.price.plate}`
+      : `${item.price}`
+  }
+</span>                  </div>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -95,10 +101,10 @@ if (bunshawarmaContainer) {
                   <div class="card-top">
                     <h3 class="card-name">${item.name}
                     </h3>
-                    <span class="card-price">Price: ${item.price}</span>
+                    <span class="card-price">${item.price}</span>
                   </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -123,10 +129,10 @@ if (coneshawarmaContainer) {
                   <div class="card-top">
                     <h3 class="card-name">${item.name}
                     </h3>
-                    <span class="card-price">Price: ${item.price}</span>
+                    <span class="card-price">${item.price}</span>
                   </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -151,10 +157,10 @@ if (friedChickenContainer) {
                   <div class="card-top">
                     <h3 class="card-name">${item.name}
                     </h3>
-                    <span class="card-price">Price: ${item.price}</span>
+                    <span class="card-price">${item.price}</span>
                   </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -179,10 +185,10 @@ if (burgerContainer) {
                   <div class="card-top">
                     <h3 class="card-name">${item.name}
                     </h3>
-                    <span class="card-price">Price: ${item.price}</span>
+                    <span class="card-price">${item.price}</span>
                   </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -210,8 +216,8 @@ if (alfahamContainer) {
                   </div>
                   <span class="card-price">Qtr: ${item.price.Qrt} &nbsp;Half: ${item.price.Half} &nbsp;Full: ${item.price.Full} </span>
 
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -239,8 +245,8 @@ if (grillChickenContainer) {
                   </div>
                   <span class="card-price">Qtr: ${item.price.Qrt} &nbsp;Half: ${item.price.Half} &nbsp;Full: ${item.price.Full} </span>
 
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->  
                 </div>
             </article>
           `;
@@ -265,10 +271,10 @@ if (kebabContainer) {
                   <div class="card-top">
                     <h3 class="card-name">${item.name}
                     </h3>
-                    <span class="card-price">Price: ${item.price}</span>
+                    <span class="card-price">${item.price}</span>
                   </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -293,10 +299,10 @@ if (statersContainer) {
                   <div class="card-top">
                     <h3 class="card-name">${item.name}
                     </h3>
-                    <span class="card-price">Price: ${item.price}</span>
+                    <span class="card-price">${item.price}</span>
                   </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -321,10 +327,10 @@ if (chickenWrapContainer) {
                   <div class="card-top">
                     <h3 class="card-name">${item.name}
                     </h3>
-                    <span class="card-price">Price: ${item.price}</span>
+                    <span class="card-price">${item.price}</span>
                   </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -352,8 +358,8 @@ if (mojitoContainer) {
                     <span class="card-price">
                     ${item.price}</span>
                   </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -381,8 +387,8 @@ if (shakesContainer) {
                     <span class="card-price">
                     ${item.price}</span>
                   </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -410,8 +416,8 @@ if (juicesContainer) {
                     <span class="card-price">
                     ${item.price}</span>
                   </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -439,8 +445,8 @@ if (dessertsContainer) {
                     <span class="card-price">
                     ${item.price}</span>
                   </div>
-                  <p class="card-desc">${item.desc}
-                  </p>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
                 </div>
             </article>
           `;
@@ -712,4 +718,3 @@ if (window.innerWidth <= 559) {
     }, 150);
   });
 })();
-
