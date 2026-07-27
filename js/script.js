@@ -1,6 +1,7 @@
 const container = document.getElementById("menuGrid");
 const shawarmaContainer = document.getElementById("shawarmaMenuGrid");
 const bunshawarmaContainer = document.getElementById("bunShawarmaMenuGrid");
+const vegshawarmaContainer = document.getElementById("vegShawarmaMenuGrid");
 const coneshawarmaContainer = document.getElementById("coneShawarmaMenuGrid");
 const friedChickenContainer = document.getElementById("friedChickenMenuGrid");
 const burgerContainer = document.getElementById("burgerMenuGrid");
@@ -109,6 +110,34 @@ if (bunshawarmaContainer) {
             </article>
           `;
     bunshawarmaContainer.innerHTML += item.link
+      ? `<a href="${item.link}" class="menu-card-link">${card}</a>`
+      : card;
+  });
+}
+
+if (vegshawarmaContainer) {
+  data.vegShawarmaItems.forEach((item) => {
+    const card = `
+            <article class="menu-card" data-category="${item.dataCategory}">
+                <div class="card-img-wrap">
+                  <img
+                    src="${normalizeAssetPath(item.img)}"
+                    alt="${item.alt}"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="card-body">
+                  <div class="card-top">
+                    <h3 class="card-name">${item.name}
+                    </h3>
+                    <span class="card-price">${item.price}</span>
+                  </div>
+                  <!-- <p class="card-desc">${item.desc}
+                  </p> -->
+                </div>
+            </article>
+          `;
+    vegshawarmaContainer.innerHTML += item.link
       ? `<a href="${item.link}" class="menu-card-link">${card}</a>`
       : card;
   });
